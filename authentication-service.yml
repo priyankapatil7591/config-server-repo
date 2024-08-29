@@ -1,27 +1,3 @@
-server:
-  port: 8182
-spring:
-  application:
-    name: AUTHENTICATION-SERVICE
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/Authentication
-    username: root
-    password: Root@123
-  jpa:
-    hibernate:
-      ddl-auto: update
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-  kafka:
-    bootstrap-servers: localhost:9092
-    consumer:
-      group-id: authentication-service
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 eureka:
   client:
     register-with-eureka: true
