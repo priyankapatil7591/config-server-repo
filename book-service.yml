@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: BOOK-SERVICE
+server:
+  port: 8183
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+bookfinder:
+  api:
+    host: book-finder1.p.rapidapi.com
+    key: fcbd9f35abmsh08bb8acb03a2b07p11e51djsn93f82a06697b
